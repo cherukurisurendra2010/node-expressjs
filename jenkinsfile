@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             steps{
-            git 'https://github.com/cherukurisurendra2010/node-expressjs'
+            git branch: 'main', url: 'https://github.com/cherukurisurendra2010/node-expressjs'
             sh 'npm install'
             }
         }
