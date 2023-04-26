@@ -1,8 +1,11 @@
 pipeline {
+    agent any
     stages {
         stage('Build'){
+            steps{
             git 'https://github.com/cherukurisurendra2010/node-expressjs'
             sh 'npm install'
+            }
         }
     }
 }
